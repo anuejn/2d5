@@ -21,6 +21,9 @@ Mating height is ~1.5mm.
 * Atom-connector BTB050040-F1S03201 / BTB050040-M1S03201 should fit
 * XKB Connectivity X0511FVS-40B-LPV01 / X0511WVS-40A-LPV01 should fit and is on lcsc
 
+A breakout board for intercepting communications between the camera and the sensor can be found
+in the [connector_breakout](connector/breakout) directory.
+
 ## Readout
 
 The 5d2 sensor outputs analog values (no on chip ADC) with 4 channel readout.
