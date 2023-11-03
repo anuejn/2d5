@@ -9,8 +9,8 @@ for video making and the Magic Lantern firmware was originally written for this 
 
 The sensor has 3 connectors:
 
-* larger stacking 20*2 position connector ![](pictures/connector_20x2.JPG)
-* smaller stacking 15*2 position connector ![](pictures/connector_15x2.JPG)
+* larger stacking 20*2 position connector ![a closeup of the 40 pin connector](pictures/connector_20x2.JPG)
+* smaller stacking 15*2 position connector ![a closeup of the 30 pin connector](pictures/connector_15x2.JPG)
 * other 4 position connector probably going to the vibration cleaning of the sensor
 
 The stacking connectors have the same pitch (0.466mm - 0.475mm measured probably 0.5mm) and are likely of the same series.
@@ -22,7 +22,25 @@ Mating height is ~1.5mm.
 * XKB Connectivity X0511FVS-40B-LPV01 / X0511WVS-40A-LPV01 should fit and is on lcsc
 
 A breakout board for intercepting communications between the camera and the sensor can be found
-in the [connector_breakout](connector/breakout) directory.
+in the [connector_breakout](connector/breakout) directory. It fits onto the mainboard and adapts the
+connectors to 0.1" headers. 
+![a picture of the breakout boards installed on the camera mainboard](pictures/with_breakouts.JPG)
+
+## Pinout
+
+To this point only static analysis of the pinout has been done. The results of this can be found in
+the [connector pinouts table](pictures/connector_pinouts.ods). To obtain the results in the table
+a warm round of guesswork guided by a multimeter and some PCB tracing (see gimp files in `pictures/`)
+have been used. During the probing it was immensely helpful to have the breakout PCBs ordered with
+white silkscreen to be able to write results directly to the breakout boards.
+
+The sensor most likely outputs its analog data using differential pairs and requires
+a bunch of different power supplies. To get a glimpse on how the interface could look like, see the
+[datasheet of the Cypress IBIS4-14000](interesting_datasheets/Cypress_Semiconductor-IBIS4-14000-M-datasheet.pdf).
+
+The next step is to probe the sensor in-camera with a logic analyser / oscilloscope / multimeter to
+obtain information about the power supply rails, the exact pinout and the scheme of driving the
+sensor.
 
 ## Readout
 
