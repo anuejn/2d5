@@ -29,7 +29,7 @@ connectors to 0.1" headers.
 ## Pinout
 
 To this point only static analysis of the pinout has been done. The results of this can be found in
-the [connector pinouts table](pictures/connector_pinouts.ods). To obtain the results in the table
+the [connector pinouts table](connector_pinouts.ods). To obtain the results in the table
 a warm round of guesswork guided by a multimeter and some PCB tracing (see gimp files in `pictures/`)
 have been used. During the probing it was immensely helpful to have the breakout PCBs ordered with
 white silkscreen to be able to write results directly to the breakout boards.
@@ -40,7 +40,7 @@ a bunch of different power supplies. To get a glimpse on how the interface could
 
 The next step is to probe the sensor in-camera with a logic analyser / oscilloscope / multimeter to
 obtain information about the power supply rails, the exact pinout and the scheme of driving the
-sensor.
+sensor. Some basic testing was with a logic analyser was done and the traces can be found in the traces directory.
 
 ## Readout
 
