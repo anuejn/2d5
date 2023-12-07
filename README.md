@@ -79,6 +79,7 @@ Notes:
 * 4k DCI would have a crop factor of 1.371 (vs 1.6 for APSC)
 * USB 3.0 can theoretically transport 500Mbyte/s as a theoretical maximum and probably not much more than 400Mbyte/s in practice.
 
+
 some possible ADCs:
 | part          | channels | sample rate [Msa/s] | bit depth | price   | notes    |
 | :------------ | :------- | :------------------ | :-------- | :------ | :------- |
@@ -86,3 +87,11 @@ some possible ADCs:
 | ADDI7004BBBCZ | 4        | 72                  | 14        | 65$     |          |
 | ADC34J45IRGZR | 4        | 160                 | 14        | 81$     | only ADC |
 | ADC3244       | 2        | 125                 | 14        | 26$ @1k | only ADC |
+
+
+# Analog output
+
+The image sensor outputs at four channels differentially. after each pixel, the differential output
+goes to 0mV differential value (maybe blacklevel compensation). 
+Each side (positive and negative) is centered at ~1.4V and has 300-400mv Swing. The differential
+values range from -600mV to +600mV.

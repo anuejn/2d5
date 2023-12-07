@@ -1,0 +1,2 @@
+*.vcd filter=lfs diff=lfs merge=lfs -text
+*.wfm filter=lfs diff=lfs merge=lfs -text
