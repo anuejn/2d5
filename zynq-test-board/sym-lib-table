@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2d5")(type "KiCad")(uri "${KIPRJMOD}/custom_parts/2d5.kicad_sym")(options "")(descr ""))
+  (lib (name "HMCAD1511")(type "KiCad")(uri "${KIPRJMOD}/custom_parts/HMCAD1511.kicad_sym")(options "")(descr ""))
+  (lib (name "z-turn-lite")(type "KiCad")(uri "${KIPRJMOD}/custom_parts/z-turn-lite.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS55340PWR")(type "KiCad")(uri "${KIPRJMOD}/custom_parts/TPS55340PWR.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,72 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 2236cb1e-2052-4712-89fe-8e121b971145)
+
+  (paper "A4")
+
+  (title_block
+    (title "2D5 experiment board")
+    (date "2023-12-01")
+    (rev "0.1")
+    (company "Apertus")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 107.95 66.04) (size 34.29 58.42) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 6a07ae64-e8d4-4c58-b94b-3aa9e216b508)
+    (property "Sheetname" "Power" (at 107.95 65.3284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 107.95 125.0446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "zynq-test-board"
+        (path "/2236cb1e-2052-4712-89fe-8e121b971145" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 147.32 100.33) (size 35.56 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 88fc6c6b-698b-452b-b084-70551785aeb2)
+    (property "Sheetname" "digital" (at 147.32 99.6184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "digital.kicad_sch" (at 147.32 125.0446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "zynq-test-board"
+        (path "/2236cb1e-2052-4712-89fe-8e121b971145" (page "15"))
+      )
+    )
+  )
+
+  (sheet (at 147.32 66.04) (size 35.56 27.94) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid a8a39352-19c4-4341-be88-27cede1eef9a)
+    (property "Sheetname" "ADC" (at 147.32 65.3284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "adc.kicad_sch" (at 147.32 94.5646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "zynq-test-board"
+        (path "/2236cb1e-2052-4712-89fe-8e121b971145" (page "10"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

@@ -1,0 +1,68 @@
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'darwin'
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.8
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x117e635e0>
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with U9 as a reference
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'U9'
+Located on: ['Power', 'sensor 1v3']
+With filenames: ['power.kicad_sch', 'ordinary_rail.kicad_sch']
+With sheet_id:['Power', 'sensor 1v3']
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('U12', ['Power', 'sensor 5V']), ('U3', ['Power', 'sensor 3V3']), ('U9', ['Power', 'sensor 1v3']), ('U5', ['Power', 'sensor 2V']), ('U7', ['Power', 'sensor 1V5']), ('U1', ['Power', 'adc_1v8'])]
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'sensor 1v3', file:'ordinary_rail.kicad_sch'
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Power', 'adc_1v8'], ['Power', 'sensor 1V5'], ['Power', 'sensor 2V'], ['Power', 'sensor 3V3'], ['Power', 'sensor 5V']]
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Power', 'sensor 1v3']
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(1835, 140)
+12-10 02:35:56 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(1396, 140)
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'sensor 1v3', file:'ordinary_rail.kicad_sch'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Power', 'adc_1v8'], ['Power', 'sensor 1V5'], ['Power', 'sensor 2V'], ['Power', 'sensor 3V3'], ['Power', 'sensor 5V']]
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['Power', 'sensor 5V']]
+on level: ['Power', 'sensor 1v3']
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
+12-10 02:36:02 root 332:updating GUI message: 'Preparing for replication'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
+12-10 02:36:02 root 337:updating GUI with: 0
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
+12-10 02:36:02 root 337:updating GUI with: 66
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
+12-10 02:36:02 root 332:updating GUI message: 'Replicating footprints'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Power', 'sensor 5V']
+12-10 02:36:02 root 332:updating GUI message: 'Replicating tracks'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Power', 'sensor 5V']
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['+2V5'] and dst net: ['', 'Power', '+6V'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=2, dst_fp_depth=2, match level 0.57
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['+2V5'] and dst net: ['', 'Power', '+6V'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=2, dst_fp_depth=2, match level 0.57
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['+2V5'] and dst net: ['', 'Power', '+6V'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=2, dst_fp_depth=2, match level 0.57
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Power', 'sensor 5V'] :[('unconnected-(U10-~{Alert}-Pad3)', 'unconnected-(U13-~{Alert}-Pad3)'), ('SCL', 'SCL'), ('GND', '+3V3'), ('Net-(U10-Vin-)', 'Net-(U13-Vin-)'), ('Net-(U10-Vin+)', 'Net-(U13-Vin+)'), ('Net-(U10-Vbus)', 'Net-(U12-Vout)'), ('/Power/sensor 1v3/SHDN', '/Power/sensor 5V/SHDN'), ('SCL', '+3V3'), ('unconnected-(U9-PWRGD-Pad5)', 'unconnected-(U12-PWRGD-Pad5)'), ('GND', 'GND'), ('/Power/sensor 1v3/ADJ', '/Power/sensor 5V/ADJ'), ('Net-(U9-Cdelay)', 'Net-(U12-Cdelay)'), ('+3V3', '+3V3'), ('Sensor+1V3', 'Sensor+5V'), ('unconnected-(RV5-Pad1)', 'unconnected-(RV6-Pad1)'), ('SDA', 'SDA'), ('+2V5', '/Power/+6V')]
+12-10 02:36:02 root 337:updating GUI with: 87
+12-10 02:36:02 root 332:updating GUI message: 'Replicating zones'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Power', 'sensor 5V']
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['+2V5'] and dst net: ['', 'Power', '+6V'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=2, dst_fp_depth=2, match level 0.57
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['+2V5'] and dst net: ['', 'Power', '+6V'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=2, dst_fp_depth=2, match level 0.57
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['+2V5'] and dst net: ['', 'Power', '+6V'], with src_net_depth=1, dst_net_depth=3, src_fp_depth=2, dst_fp_depth=2, match level 0.57
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Power', 'sensor 5V'] :[('unconnected-(U10-~{Alert}-Pad3)', 'unconnected-(U13-~{Alert}-Pad3)'), ('SCL', 'SCL'), ('GND', '+3V3'), ('Net-(U10-Vin-)', 'Net-(U13-Vin-)'), ('Net-(U10-Vin+)', 'Net-(U13-Vin+)'), ('Net-(U10-Vbus)', 'Net-(U12-Vout)'), ('/Power/sensor 1v3/SHDN', '/Power/sensor 5V/SHDN'), ('SCL', '+3V3'), ('unconnected-(U9-PWRGD-Pad5)', 'unconnected-(U12-PWRGD-Pad5)'), ('GND', 'GND'), ('/Power/sensor 1v3/ADJ', '/Power/sensor 5V/ADJ'), ('Net-(U9-Cdelay)', 'Net-(U12-Cdelay)'), ('+3V3', '+3V3'), ('Sensor+1V3', 'Sensor+5V'), ('unconnected-(RV5-Pad1)', 'unconnected-(RV6-Pad1)'), ('SDA', 'SDA'), ('+2V5', '/Power/+6V')]
+12-10 02:36:02 root 332:updating GUI message: 'Replicating text'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Power', 'sensor 5V']
+12-10 02:36:02 root 332:updating GUI message: 'Replicating drawings'
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Power', 'sensor 5V']
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 259:Letting the user know there are some issues with replicated design
+12-10 02:36:02 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 263:Looks like the design has an exotic connectivity that the plugin might not handle properly
+ Make sure that you check the connectivity around:
+Footprint C42, pad 1
+Footprint U12, pad 2
+Footprint U12, pad 1
+
