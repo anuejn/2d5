@@ -8,8 +8,8 @@ After this, figuring out the pinout of the actual CMOS should be trivial if need
 
 The sensor assembly has 3 connectors:
 
-* larger stacking 20*2 position connector ![a closeup of the 40 pin connector](pictures/connector_20x2.JPG)
-* smaller stacking 15*2 position connector ![a closeup of the 30 pin connector](pictures/connector_15x2.JPG)
+* larger stacking 20*2 position connector ![a closeup of the 40 pin connector](../pictures/connector_20x2.JPG)
+* smaller stacking 15*2 position connector ![a closeup of the 30 pin connector](../pictures/connector_15x2.JPG)
 * other 4 position connector probably going to the vibration cleaning of the sensor
 
 The stacking connectors have the same pitch (0.466mm - 0.475mm measured probably 0.5mm) and are likely of the same series.
@@ -21,9 +21,9 @@ Mating height is ~1.5mm.
 * XKB Connectivity X0511FVS-40B-LPV01 / X0511WVS-40A-LPV01 should fit and is on lcsc
 
 A breakout board for intercepting communications between the camera and the sensor can be found
-in the [connector_breakout](connector/breakout) directory. It fits onto the mainboard and adapts the
+in the [connector_breakout](../connector_breakout) directory. It fits onto the mainboard and adapts the
 connectors to 0.1" headers.
-![a picture of the breakout boards installed on the camera mainboard](pictures/with_breakouts.JPG)
+![a picture of the breakout boards installed on the camera mainboard](../pictures/with_breakouts.JPG)
 
 ## Pinout
 
@@ -40,4 +40,4 @@ In the whole project, I refer to the pins using their coordinates in this spread
 
 The sensor outputs its analog data using differential pairs and requires
 a bunch of different power supplies. To get a glimpse on how the interface could look like, see the
-[datasheet of the Cypress IBIS4-14000](interesting_datasheets/Cypress_Semiconductor-IBIS4-14000-M-datasheet.pdf).
+[datasheet of the Cypress IBIS4-14000](../interesting_datasheets/Cypress_Semiconductor-IBIS4-14000-M-datasheet.pdf).

@@ -17,7 +17,7 @@ values range from -600mV to +600mV.
 | HMCAD1520     | 4        | 160                 | 12        | 121$    | only ADC |
 | HMCAD1511     | 4        | 125                 | 8         | 13$     | only ADC |
 
-There is a test-board with a HMCAD1511 in the [zynq-test-board/](zynq-test-board/) folder.
+There is a test-board with a HMCAD1511 in the [zynq-test-board/](../zynq-test-board/) folder.
 
 
 ### HMCAD1511
