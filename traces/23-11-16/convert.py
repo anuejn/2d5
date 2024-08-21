@@ -29,6 +29,7 @@ def load_raw_data(filename: str):
     assert len(data.data.raw) == LENGTH * 2 + 512
     global sample_rate
     sample_rate = int(data.header.sample_rate_hz)
+    print(sample_rate)
     return data.data.raw
 
 data1 = load_raw_data(f"setup1_{variable_part}.wfm")
@@ -41,15 +42,14 @@ else:
     LENGTH -= -OFFSET
 # LENGTH //= 100
 
-
 out_file = open(f"{variable_part}.vcd", "w")
 vcd_writer = VCDWriter(out_file, timescale="1 ns", check_values=False)
 vcd_signals1 = {
-    i: vcd_writer.register_var(scope="", name=f"{name}_(setup1_{i})", var_type="wire", size=1, init=0)
+    i: vcd_writer.register_var(scope="setup1", name=f"{name}_(setup1_{i})", var_type="wire", size=1, init=0)
     for i, name in setup1.items()
 }
 vcd_signals2 = {
-    i: vcd_writer.register_var(scope="", name=f"{name}_(setup2_{i})", var_type="wire", size=1, init=0)
+    i: vcd_writer.register_var(scope="setup2", name=f"{name}_(setup2_{i})", var_type="wire", size=1, init=0)
     for i, name in setup2.items()
 }
 for cycle in tqdm(range(LENGTH)):

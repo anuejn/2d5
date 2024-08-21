@@ -1,0 +1,44 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Tue Aug 20 21:15:43 2024
+[*]
+[dumpfile] "/Users/anuejn/Developer/2d5/traces/23-11-16/exp30_iso100_fhd.vcd"
+[dumpfile_mtime] "Sat Mar 16 17:32:59 2024"
+[dumpfile_size] 111614414
+[savefile] "/Users/anuejn/Developer/2d5/traces/23-11-16/test.gtkw"
+[timestart] 1846800
+[size] 2056 1257
+[pos] -1 -1
+*-15.300000 64320 47820 71400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[sst_width] 253
+[signals_width] 152
+[sst_expanded] 1
+[sst_vpaned_height] 389
+@28
+setup1.D6_(setup1_10)
+setup1.J5_(setup1_1)
+setup1.C3_(setup1_11)
+setup1.J18_(setup1_8)
+setup1.J21_(setup1_9)
+setup2.J12_(setup2_8)
+setup2.J17_(setup2_7)
+setup2.J21_(setup2_9)
+setup2.C17_(setup2_4)
+setup2.C6_(setup2_13)
+setup1.J11_(setup1_4)
+setup2.J10_(setup2_3)
+@29
+setup2.J8_(setup2_2)
+@28
+setup2.J15_(setup2_5)
+setup2.J16_(setup2_6)
+setup1.C5_(setup1_12)
+setup1.J9_(setup1_0)
+setup1.J8_(setup1_2)
+setup2.C14_(setup2_14)
+setup2.C15_(setup2_15)
+setup2.C16_(setup2_1)
+[pattern_trace] 1
+[pattern_trace] 0

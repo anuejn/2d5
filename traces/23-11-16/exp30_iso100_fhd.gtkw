@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Fri Jan 12 14:43:23 2024
+[*]
+[dumpfile] "/Users/anuejn/Developer/2d5/traces/23-11-16/exp30_iso100_fhd.vcd"
+[dumpfile_mtime] "Sun Dec 17 15:00:13 2023"
+[dumpfile_size] 111614368
+[savefile] "/Users/anuejn/Developer/2d5/traces/23-11-16/exp30_iso100_fhd.gtkw"
+[timestart] 0
+[size] 2056 1257
+[pos] -1 -1
+*-24.000000 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[sst_width] 253
+[signals_width] 152
+[sst_expanded] 1
+[sst_vpaned_height] 389
+@28
+$var.D6_(setup1_10)
+$var.J5_(setup1_1)
+@200
+-
+@28
+$var.C3_(setup1_11)
+$var.J21_(setup1_9)
+$var.J18_(setup1_8)
+$var.J17_(setup1_7)
+$var.C6_(setup1_13)
+$var.C17_(setup2_4)
+$var.J11_(setup1_4)
+@29
+$var.J12_(setup2_8)
+@28
+$var.J8_(setup2_2)
+$var.J10_(setup1_3)
+$var.J15_(setup1_5)
+$var.J16_(setup1_6)
+@200
+-
+@28
+$var.C5_(setup1_12)
+$var.J9_(setup2_0)
+@200
+-
+@28
+$var.C14_(setup2_14)
+$var.C15_(setup2_15)
+$var.C16_(setup2_1)
+[pattern_trace] 1
+[pattern_trace] 0
