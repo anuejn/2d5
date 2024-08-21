@@ -1,4 +1,4 @@
-# Notes on the Registers of the Sensor
+# Registers of the Sensor
 * The Sensor seems to have 6 registers (0 - 5) with 12 bit each
 * they are written with an SPI bus that is active when CS (C16) is high
 * There are other devices on the SPI bus (probably the ADTGs), so not all trafic is for the sensor
