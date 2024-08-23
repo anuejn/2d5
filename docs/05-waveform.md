@@ -7,4 +7,4 @@ Signals to investigate:
 * How does J10 actually look??? -> like in the newer la trace
 * Is C3 having a signal? (line) -> yes
 * Is C6 having a signal? (line) -> yes
-* Is C5 having a signal? (frame) -> no
+* Is C5 having a signal? (frame) -> yes (once per frame for ~10 lines)
