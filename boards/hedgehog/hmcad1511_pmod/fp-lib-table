@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "2d5")(type "KiCad")(uri "/Users/anuejn/Developer/2d5/boards/hedgehog/5d2_pmod/2d5.pretty")(options "")(descr ""))
+)

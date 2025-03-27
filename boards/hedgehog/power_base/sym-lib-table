@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TYPE-C_16PIN_2MD(073)")(type "KiCad")(uri "${KIPRJMOD}/JLC2KiCad_lib/symbol/TYPE-C_16PIN_2MD(073).kicad_sym")(options "")(descr ""))
+)
