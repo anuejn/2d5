@@ -1,0 +1,6 @@
+build/
+.sim_results/
+.vscode/
+__pycache__/
+.pytest_cache/
+.venv/
