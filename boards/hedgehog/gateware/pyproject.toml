@@ -1,0 +1,17 @@
+[project]
+name = "gateware"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11, <=3.12"
+dependencies = [
+    "amaranth-boards",
+    "liteeth>=2024.12",
+    "migen",
+    "naps>=0.1.dev513",
+    "pytest>=8.3.5",
+]
+
+[tool.uv.sources]
+amaranth-boards = { git = "https://github.com/amaranth-lang/amaranth-boards" }
+migen = { git = "https://github.com/m-labs/migen" }

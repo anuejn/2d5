@@ -6,6 +6,8 @@ from timing_generator import SlothTimingGenerator
 from hedgehog_platform import HedgehogPlatform
 
 class Top(Elaboratable):
+    runs_on=[HedgehogPlatform]
+
     def elaborate(self, platform: HedgehogPlatform):
         m = Module()
 
@@ -24,19 +26,19 @@ class Top(Elaboratable):
 
         # always on pins
         for pin_name in ["J20"]:
-            m.d.comb += sensor_digital[pin_name].o.eq(1)
+            m.d.comb += getattr(sensor_digital, pin_name).o.eq(1)
 
         # spi pins
         spi = m.submodules.spi = DomainRenamer("clk25")(SpiController())
         m.d.comb += [
-            sensor_digital["C16"].o.eq(spi.spi_cs),
-            sensor_digital["C15"].o.eq(spi.spi_clk),
-            sensor_digital["C14"].o.eq(spi.spi_copi),
-            spi.fire.eq(sensor_digital["C5"].o),
+            sensor_digital.C16.o.eq(spi.spi_cs),
+            sensor_digital.C15.o.eq(spi.spi_clk),
+            sensor_digital.C14.o.eq(spi.spi_copi),
+            spi.fire.eq(sensor_digital.C5.o),
         ]
 
         return m
 
 
 if __name__ == "__main__":
-    cli(Top, runs_on=(HedgehogPlatform,), possible_socs=(JTAGSocPlatform,))
+    cli(Top)

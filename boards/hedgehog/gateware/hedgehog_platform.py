@@ -2,6 +2,7 @@ from textwrap import dedent
 from amaranth import *
 from amaranth.build import *
 from amaranth_boards.ecpix5 import ECPIX585Platform
+from amaranth_boards.extensions import pmod
 from naps.soc.fatbitstream import File
 from naps import program_fatbitstream_local
 
@@ -57,7 +58,27 @@ class HedgehogPlatform(ECPIX585Platform):
                     Attrs(IO_TYPE='LVCMOS33'),
                 ),
         ])
-    
+
+    def connect_hmcad1511_pmod(self, pmods = (4, 5)):
+        self.add_resources([
+            Resource("hmcad1511", 0,
+                Subsignal("pwr_en", Pins("2", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+                Subsignal("reset", PinsN("4", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+                Subsignal("clk", Pins("7", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+                Subsignal("power_down", Pins("10", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+
+                Subsignal("d", DiffPairs("2 8", "1 7", dir="i", conn=("pmod", pmods[0])), Attrs(IO_TYPE='LVDS')),
+                Subsignal("lclk", DiffPairs("4", "3", dir="i", conn=("pmod", pmods[0])), Attrs(IO_TYPE='LVDS')),
+                # Subsignal("fclk", DiffPairs("10", "9", dir="i", conn=("pmod", pmods[0])), Attrs(IO_TYPE='LVDS')),
+            ),
+            Resource("hmcad1511_spi", 0,
+                Subsignal("cs", PinsN("8", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+
+                Subsignal("clk", Pins("9", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+                Subsignal("copi", Pins("3", dir="o", conn=("pmod", pmods[1])), Attrs(IO_TYPE='LVCMOS33')),
+            )
+        ])
+
     def generate_openocd_conf(self):
         yield File("openocd.cfg", dedent(r"""
             adapter driver ftdi

@@ -1,6 +1,5 @@
 from amaranth import *
 from naps import *
-from naps.cores.peripherals.soc_memory import SocMemory
 
 class SpiController(Elaboratable):
     """A simple SPI controller that can write 16 bit words to the 5D2 image sensor."""
@@ -8,9 +7,10 @@ class SpiController(Elaboratable):
     def __init__(self):
         self.length = ControlSignal(8, reset=5)
         self.fire = Signal()
-        self.mem = Memory(width=16, depth=256, init=[
-            0x0203, 0x1c00, 0x240e, 0x3005, 0x4242, 0x5c01
-        ])
+        self.mem = SocMemory(
+            shape=16, depth=256, soc_read=False,
+            init=[0x0203, 0x1c00, 0x240e, 0x3005, 0x4242, 0x5c01]
+        )
 
         self.spi_clk = Signal()
         self.spi_copi = Signal()
@@ -24,7 +24,8 @@ class SpiController(Elaboratable):
 
         self.current_word = Signal.like(self.length)
 
-        read_port = m.submodules.read_port = self.mem.read_port(domain="comb")
+        read_port = self.mem.read_port(domain="comb")
+        m.submodules.mem = self.mem
 
         with m.FSM():
             with m.State("IDLE"):
